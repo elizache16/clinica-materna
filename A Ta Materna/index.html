@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A TA MATERNA - Clinică</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="language-selector">
+            <select id="languageSelect" onchange="changeLanguage(this.value)">
+                <option value="ro">Română</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="hu">Hongrois</option>
+            </select>
+        </div>
+        <div class="logo">
+            <h1>
+                <span class="translate" data-ro="A TA, MATERNA!" data-en="YOUR, MATERNAL!" data-fr="VOTRE, MATERNELLE!"
+                    data-hu="AZ ÖN, ANYASÁGA!">
+                    A TA, MATERNA!
+                </span>
+                <span class="heart">❤</span>
+            </h1>
+            <div class="subtitle translate" data-ro="Clinica Medicală Materna" data-en="Maternal Medical Clinic"
+                data-fr="Clinique Médicale Maternelle" data-hu="Anyasági Orvosi Klinika">
+                Clinica Medicală Materna
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="servicii.html">Servicii</a></li>
+                <li><a href="despre-noi.html">Despre noi</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="flags">
+                <img src="romania flag.jpg" alt="Romanian" onclick="changeLanguage('ro')" class="flag-icon">
+                <img src="hongrois flag.jpg" alt="Hungarian" onclick="changeLanguage('hu')" class="flag-icon">
+                <img src="English flag.jpg" alt="English" onclick="changeLanguage('en')" class="flag-icon">
+                <img src="France flag.jpg" alt="French" onclick="changeLanguage('fr')" class="flag-icon">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile-images">
+            <div class="profile">
+                <img src="nasicu si larrisa.jpg" alt="Nasicu și Larisa" class="round-image">
+            </div>
+            <div class="profile-info">
+                <div class="manager translate" data-ro="Manager: Dr. Popescu Marin, tel. 0728.975.525"
+                    data-en="Manager: Dr. Popescu Marin, phone: 0728.975.525"
+                    data-fr="Directeur: Dr. Popescu Marin, tél: 0728.975.525"
+                    data-hu="Igazgató: Dr. Popescu Marin, tel: 0728.975.525">
+                    Manager: Dr. Popescu Marin, tel. 0728.975.525
+                </div>
+                <div class="program translate" data-ro="Program audiențe: Vineri 14-16"
+                    data-en="Office hours: Friday 14-16" data-fr="Heures de bureau: Vendredi 14-16"
+                    data-hu="Fogadóórák: Péntek 14-16">
+                    Program audiențe: Vineri 14-16
+                </div>
+                <div class="doctor translate" data-ro="Director Medical: Dr. Popescu Renatta, tel. 0728.975.525"
+                    data-en="Medical Director: Dr. Popescu Renatta, phone: 0728.975.525"
+                    data-fr="Directeur Médical: Dr. Popescu Renatta, tél: 0728.975.525"
+                    data-hu="Orvos Igazgató: Dr. Popescu Renatta, tel: 0728.975.525">
+                    Director Medical: Dr. Popescu Renatta, tel. 0728.975.525
+                </div>
+            </div>
+        </div>
+        <div class="welcome-section">
+            <h2 class="translate"
+                data-ro="Clinica privată Materna - Spital obstetrică-ginecologie, servicii ambulatoriu și laborator propriu pentru analize medicale"
+                data-en="Private Clinic Materna - Obstetrics-Gynecology Hospital, outpatient services and own medical analysis laboratory"
+                data-fr="Clinique privée Materna - Hôpital d'obstétrique-gynécologie, services ambulatoires et laboratoire d'analyses médicales"
+                data-hu="Materna Magánklinika - Szülészet-nőgyógyászati kórház, járóbeteg-ellátás és saját orvosi laboratórium">
+                Clinica privată Materna - Spital obstetrică-ginecologie, servicii ambulatoriu și laborator propriu
+                pentru analize medicale
+            </h2>
+
+            <div class="welcome-description">
+                <p class="translate" data-ro="Bine ați venit la CLINICA MEDICALĂ PRIVATĂ 'MATERNA'!"
+                    data-en="Welcome to PRIVATE MEDICAL CLINIC 'MATERNA'!"
+                    data-fr="Bienvenue à la CLINIQUE MÉDICALE PRIVÉE 'MATERNA'!"
+                    data-hu="Üdvözöljük a 'MATERNA' MAGÁNKLINIKÁN!">
+                    Bine ați venit la CLINICA MEDICALĂ PRIVATĂ "MATERNA"!
+                </p>
+
+                <p class="translate"
+                    data-ro="Echipa noastră medicală, formată din cei mai buni specialiști, vă întâmpină cu servicii de înaltă calitate, pentru ca dumneavoastră să vă puteți bucura de sănătate alături de cei dragi."
+                    data-en="Our medical team, consisting of the best specialists, welcomes you with high-quality services, so that you can enjoy health with your loved ones."
+                    data-fr="Notre équipe médicale, composée des meilleurs spécialistes, vous accueille avec des services de haute qualité, pour que vous puissiez profiter de la santé avec vos proches."
+                    data-hu="Orvosi csapatunk, amely a legjobb szakemberekből áll, magas színvonalú szolgáltatásokkal várja Önt, hogy szeretteivel együtt élvezhesse az egészséget.">
+                    Echipa noastră medicală, formată din cei mai buni specialiști, vă întâmpină cu servicii de înaltă
+                    calitate, pentru ca dumneavoastră să vă puteți bucura de sănătate alături de cei dragi.
+                </p>
+
+                <p class="translate"
+                    data-ro="Veți beneficia de metode de diagnosticare și tratament moderne, CLINICA 'MATERNA' având un ambulatoriu cu specialități de bază diversificate și dotare cu echipamente medicale de ultimă generație."
+                    data-en="You will benefit from modern diagnostic and treatment methods, CLINIC 'MATERNA' having an outpatient department with diverse basic specialties and state-of-the-art medical equipment."
+                    data-fr="Vous bénéficierez de méthodes modernes de diagnostic et de traitement, la CLINIQUE 'MATERNA' disposant d'un service ambulatoire avec des spécialités de base diversifiées et des équipements médicaux de pointe."
+                    data-hu="Modern diagnosztikai és kezelési módszereket vehet igénybe, a 'MATERNA' KLINIKA változatos alapszakmákkal és korszerű orvosi berendezésekkel felszerelt járóbeteg-részleggel rendelkezik.">
+                    Veți beneficia de metode de diagnosticare și tratament moderne, CLINICA "MATERNA" având un
+                    ambulatoriu cu specialități de bază diversificate și dotare cu echipamente medicale de ultimă
+                    generație.
+                </p>
+
+                <p class="translate"
+                    data-ro="Maternitatea clinicii oferă viitoarelor mămici confort și siguranță, acestea putând opta pentru naștere pe cale naturală sau prin operație cezariană. Bebelușii sunt atent monitorizați de neonatologi cu experiență."
+                    data-en="The clinic's maternity offers comfort and safety to future mothers, who can opt for natural birth or cesarean section. Babies are carefully monitored by experienced neonatologists."
+                    data-fr="La maternité de la clinique offre confort et sécurité aux futures mamans, qui peuvent opter pour un accouchement naturel ou une césarienne. Les bébés sont surveillés attentivement par des néonatologistes expérimentés."
+                    data-hu="A klinika szülészete kényelmet és biztonságot nyújt a leendő anyáknak, akik választhatnak természetes szülés vagy császármetszés között. A babákat tapasztalt újszülöttgyógyászok gondosan figyelik.">
+                    Maternitatea clinicii oferă viitoarelor mămici confort și siguranță, acestea putând opta pentru
+                    naștere pe cale naturală sau prin operație cezariană. Bebelușii sunt atent monitorizați de
+                    neonatologi cu experiență.
+                </p>
+
+                <p class="translate"
+                    data-ro="Laboratoarele de analize medicale sunt dotate cu analizoare automate și semiautomate și oferă un răspuns rapid și eficient."
+                    data-en="Medical laboratories are equipped with automatic and semi-automatic analyzers and provide quick and efficient results."
+                    data-fr="Les laboratoires médicaux sont équipés d'analyseurs automatiques et semi-automatiques et fournissent des résultats rapides et efficaces."
+                    data-hu="Az orvosi laboratóriumok automatikus és félautomata analizátorokkal vannak felszerelve, és gyors, hatékony eredményeket biztosítanak.">
+                    Laboratoarele de analize medicale sunt dotate cu analizoare automate și semiautomate și oferă un
+                    răspuns rapid și eficient.
+                </p>
+            </div>
+
+            <div class="accreditation">
+                <img src="certificat-acreditare.jpg" alt="Certificat de Acreditare ANMCS" class="accreditation-image">
+                <p class="accreditation-text translate" data-ro="Acreditare ANMCS din 07.02.2020"
+                    data-en="ANMCS Accreditation from 07.02.2020" data-fr="Accréditation ANMCS du 07.02.2020"
+                    data-hu="ANMCS akkreditáció 2020.02.07-től">
+                    Acreditare ANMCS din 07.02.2020
+                </p>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="hero-image">
+                <img src="clinica A ta Materna1.jpg" alt="Clinica A TA MATERNA">
+                <div class="contact-info">
+                    <div class="contact-line">
+                        <span class="contact-label translate" data-ro="Telefon:" data-en="Phone:" data-fr="Téléphone:"
+                            data-hu="Telefon:">
+                            Telefon:
+                        </span>
+                        <span class="contact-number">0237 214 750</span>
+                    </div>
+                    <div class="contact-line">
+                        <span class="contact-label translate" data-ro="Fax:" data-en="Fax:" data-fr="Fax:"
+                            data-hu="Fax:">
+                            Fax:
+                        </span>
+                        <span class="contact-number">0237 214 750</span>
+                    </div>
+                    <div class="contact-line">
+                        <span class="contact-label translate" data-ro="Mobil:" data-en="Mobile:" data-fr="Mobile:"
+                            data-hu="Mobil:">
+                            Mobil:
+                        </span>
+                        <span class="contact-number">0728 975 525</span>
+                    </div>
+                    <div class="contact-line">
+                        <span class="contact-label translate" data-ro="Adresa:" data-en="Address:" data-fr="Adresse:"
+                            data-hu="Cím:">
+                            Adresa:
+                        </span>
+                        <span class="contact-number translate"
+                            data-ro="Strada Ion Creangă nr. 11, Focșani, Jud. Vrancea"
+                            data-en="11 Ion Creanga Street, Focsani, Vrancea County"
+                            data-fr="11 Rue Ion Creanga, Focsani, Département de Vrancea"
+                            data-hu="Ion Creanga utca 11, Focsani, Vrancea megye">
+                            Strada Ion Creangă nr. 11, Focșani, Jud. Vrancea
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="side-image">
+                <img src="Larisa prezentare.jpg" alt="Larisa prezentare">
+            </div>
+        </div>
+        <div class="left-sidebar">
+            <div class="sidebar-section">
+                <h3 class="translate" data-ro="Alege maternitatea Clinicii Materna!"
+                    data-en="Choose Materna Clinic's Maternity!"
+                    data-fr="Choisissez la Maternité de la Clinique Materna!"
+                    data-hu="Válassza a Materna Klinika Szülészetét!">
+                    Alege maternitatea Clinicii Materna!
+                </h3>
+                <h4 class="translate" data-ro="Naște în siguranță, asistată de cei mai buni specialiști!"
+                    data-en="Give birth safely, assisted by the best specialists!"
+                    data-fr="Accouchez en toute sécurité, assistée par les meilleurs spécialistes!"
+                    data-hu="Szüljön biztonságban, a legjobb szakemberek segítségével!">
+                    Naște în siguranță, asistată de cei mai buni specialiști!
+                </h4>
+                <ul class="maternity-services">
+                    <li class="translate" data-ro="Monitorizare pe toată perioada sarcinii prin consultații regulate"
+                        data-en="Monitoring throughout pregnancy through regular consultations"
+                        data-fr="Suivi tout au long de la grossesse par des consultations régulières"
+                        data-hu="Rendszeres konzultációk a terhesség teljes időtartama alatt">
+                        Monitorizare pe toată perioada sarcinii prin consultații regulate
+                    </li>
+                    <li class="translate" data-ro="Ecografii în trimestrele I, II și III de sarcină"
+                        data-en="Ultrasounds in the first, second, and third trimesters of pregnancy"
+                        data-fr="Échographies dans les trois premiers trimestres de grossesse"
+                        data-hu="Szülési érésekben és terhességben végzett ultrahangos vizsgálatok">
+                        Ecografii în trimestrele I, II și III de sarcină
+                    </li>
+                    <li class="translate" data-ro="Analize medicale recomandate pentru părinți în perioada sarcinii"
+                        data-en="Medical analyses recommended for parents during pregnancy"
+                        data-fr="Analyses médicales recommandées pour les parents pendant la grossesse"
+                        data-hu="Terhesség alatt ajánlott orvosi analízisek">
+                        Analize medicale recomandate pentru părinți în perioada sarcinii
+                    </li>
+                    <li class="translate"
+                        data-ro="Naștere asistată pe cale naturală sau prin operație cezariană, cu internare în rezervă simplă sau dublă"
+                        data-en="Assisted birth naturally or by cesarean section, with single or double room reservation"
+                        data-fr="Naissance assistée naturellement ou par césarienne, avec réservation de chambre simple ou double"
+                        data-hu="Természetes szülés vagy cseresznye szekció, egyszerű vagy dupla szoba foglalással">
+                        Naștere asistată pe cale naturală sau prin operație cezariană, cu internare în rezervă simplă
+                        sau dublă
+                    </li>
+                    <li class="translate" data-ro="Analize pentru nou-născut" data-en="Analyses for newborn"
+                        data-fr="Analyses pour le nouveau-né" data-hu="Születés utáni analízisek">
+                        Analize pentru nou-născut
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="translate" data-ro="Laboratoare de analize medicale" data-en="Medical Analysis Laboratories"
+                    data-fr="Laboratoires d'analyses médicales" data-hu="Orvosi laboratóriumok">
+                    Laboratoare de analize medicale
+                </h3>
+                <ul class="lab-services">
+                    <li class="translate" data-ro="Hematologie și Imunohematologie"
+                        data-en="Hematology and Immunohematology" data-fr="Hématologie et Immunohématologie"
+                        data-hu="Hematológia és Immunhematológia">
+                        Hematologie și Imunohematologie
+                    </li>
+                    <li class="translate" data-ro="Coagulare" data-en="Coagulation" data-fr="Coagulation"
+                        data-hu="Véralvadás">
+                        Coagulare
+                    </li>
+                    <li class="translate" data-ro="Biochimie" data-en="Biochemistry" data-fr="Biochimie"
+                        data-hu="Biokémia">
+                        Biochimie
+                    </li>
+                    <li class="translate" data-ro="Serologie" data-en="Serology" data-fr="Sérologie"
+                        data-hu="Szerológia">
+                        Serologie
+                    </li>
+                    <li class="translate" data-ro="Microbiologie" data-en="Microbiology" data-fr="Microbiologie"
+                        data-hu="Mikrobiológia">
+                        Microbiologie
+                    </li>
+                    <li class="translate" data-ro="Parazitologie" data-en="Parasitology" data-fr="Parasitologie"
+                        data-hu="Parazitológia">
+                        Parazitologie
+                    </li>
+                    <li class="translate" data-ro="Imunologie" data-en="Immunology" data-fr="Immunologie"
+                        data-hu="Immunológia">
+                        Imunologie
+                    </li>
+                    <li class="translate" data-ro="Markeri virali, endocrini și tumorali"
+                        data-en="Viral, endocrine and tumor markers"
+                        data-fr="Marqueurs viraux, endocriniens et tumoraux"
+                        data-hu="Vírus, endokrin és tumor markerek">
+                        Markeri virali, endocrini și tumorali
+                    </li>
+                    <li class="translate" data-ro="Screening parental" data-en="Parental screening"
+                        data-fr="Dépistage parental" data-hu="Szülői szűrés">
+                        Screening parental
+                    </li>
+                    <li class="translate" data-ro="Fertilitate" data-en="Fertility" data-fr="Fertilité"
+                        data-hu="Termékenység">
+                        Fertilitate
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="translate" data-ro="Clinica Materna" data-en="Materna Clinic" data-fr="Clinique Materna"
+                    data-hu="Materna Klinika">
+                    Clinica Materna
+                </h3>
+                <h4 class="translate" data-ro="Chirurgie ginecologică" data-en="Gynecological Surgery"
+                    data-fr="Chirurgie gynécologique" data-hu="Nőgyógyászati sebészet">
+                    Chirurgie ginecologică
+                </h4>
+                <p class="surgery-info translate"
+                    data-ro="Laparoscopică și histeroscopie pentru problemele de infertilitate"
+                    data-en="Laparoscopic and hysteroscopy for infertility problems"
+                    data-fr="Laparoscopie et hystéroscopie pour les problèmes d'infertilité"
+                    data-hu="Laparoszkópos és hiszteroszkópos beavatkozások meddőségi problémák esetén">
+                    Laparoscopică și histeroscopie pentru problemele de infertilitate
+                </p>
+                <h4 class="translate" data-ro="Metode moderne" data-en="Modern Methods" data-fr="Méthodes modernes"
+                    data-hu="Modern módszerek">
+                    Metode moderne
+                </h4>
+                <ul class="modern-methods">
+                    <li class="translate"
+                        data-ro="Diagnostic și tratament pentru pacientele care suferă de boli ginecologice dar și probleme ale infertilității de cuplu, cu aparatură ultramodernă"
+                        data-en="Diagnosis and treatment for patients suffering from gynecological diseases and couple infertility problems, with ultra-modern equipment"
+                        data-fr="Diagnostic et traitement pour les patientes souffrant de maladies gynécologiques et de problèmes d'infertilité du couple, avec un équipement ultra-moderne"
+                        data-hu="Diagnózis és kezelés nőgyógyászati betegségekben és párkapcsolati terméketlenségi problémákban szenvedő páciensek számára, ultramodern berendezésekkel">
+                        Diagnostic și tratament pentru pacientele care suferă de boli ginecologice dar și probleme ale
+                        infertilității de cuplu, cu aparatură ultramodernă
+                    </li>
+                    <li class="translate" data-ro="Diagnosticare histeroscopică rapidă și precisă"
+                        data-en="Fast and accurate hysteroscopic diagnosis"
+                        data-fr="Diagnostic hystéroscopique rapide et précis"
+                        data-hu="Gyors és pontos hiszteroszkópos diagnózis">
+                        Diagnosticare histeroscopică rapidă și precisă
+                    </li>
+                    <li class="translate" data-ro="Chirurgie clasică sau laparoscopică"
+                        data-en="Classical or laparoscopic surgery" data-fr="Chirurgie classique ou laparoscopique"
+                        data-hu="Klasszikus vagy laparoszkópos műtét">
+                        Chirurgie clasică sau laparoscopică
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section id="acasa">
+            <!-- Eliminăm titlul și textul de aici deoarece l-am mutat mai sus -->
+        </section>
+    </main>
+
+    <footer>
+        <p class="translate" data-ro="© 2024 A TA MATERNA. Toate drepturile rezervate."
+            data-en="© 2024 YOUR MATERNAL. All rights reserved."
+            data-fr="© 2024 VOTRE MATERNELLE. Tous droits réservés."
+            data-hu="© 2024 AZ ÖN ANYASÁGA. Minden jog fenntartva.">
+            © 2024 A TA MATERNA. Toate drepturile rezervate.
+        </p>
+    </footer>
+
+    <script src="translations.js"></script>
+</body>
+
+</html>

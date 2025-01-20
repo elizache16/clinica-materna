@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.logo .subtitle {
+    color: #666;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    margin-top: 0.5rem;
+    text-align: center;
+    position: relative;
+    left: -10px;
+}
+
+.heart {
+    color: #ff0000 !important;
+    font-size: 2.2rem;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    vertical-align: middle;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 1000px;
+}
+
+.side-image {
+    display: none;
+}
+
+.hero-image {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-info {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+
+.profile-info .manager {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+}
+
+.profile-info .program {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.profile-info .doctor {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+}
+
+.965profile p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.round-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff0000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.round-image:hover {
+    transform: scale(1.1);
+}
+
+.language-selector {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.language-selector select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.language-selector select:hover {
+    border-color: #ff0000;
+}
+
+.flags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.flag-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.welcome-section h2 {
+    color: #333;
+    font-size: 1.8rem;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.welcome-section h2 .heart {
+    color: #ff0000 !important;
+    font-size: 1.8rem;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.welcome-section h2::after {
+    display: none;
+}
+
+.welcome-section p {
+    color: #666;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.welcome-section .heart {
+    color: #ff0000;
+    font-size: 2.2rem;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    vertical-align: middle;
+}
+
+/* Stilizare specifică pentru inima din titlu */
+.welcome-section h2 .heart,
+.welcome-section h2 span:last-child {
+    color: #ff0000;
+    font-size: 2.2rem;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    vertical-align: middle;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-line {
+    margin: 0.4rem 0;
+}
+
+.contact-label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 0.5rem;
+}
+
+.contact-number {
+    color: #666;
+}
+
+.despre-section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.despre-section h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.despre-content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.despre-content .intro {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.despre-content strong {
+    color: #333;
+}
+
+.specialitati {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.specialitati li {
+    padding: 0.5rem;
+    color: #444;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.specialitati li:before {
+    content: "•";
+    color: #ff0000;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.facilitati,
+.paturi,
+.misiune {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+.welcome-description {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+.welcome-description p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.left-sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: 1rem;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.sidebar-section {
+    margin-bottom: 2rem;
+}
+
+.sidebar-section h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ff0000;
+}
+
+.sidebar-section h4 {
+    color: #444;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.maternity-services,
+.lab-services,
+.modern-methods {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.maternity-services li,
+.lab-services li,
+.modern-methods li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+.maternity-services li:before,
+.lab-services li:before,
+.modern-methods li:before {
+    content: "•";
+    color: #ff0000;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.surgery-info {
+    padding: 0.5rem 0;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.services-list li:hover {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    transform: translateX(5px);
+}
+
+.service-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.schedule {
+    color: #444;
+    line-height: 1.8;
+}
+
+.schedule p {
+    margin-bottom: 0.5rem;
+}
+
+.schedule strong {
+    color: #333;
+}
+
+.accreditation {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.accreditation-image {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accreditation-text {
+    margin-top: 1rem;
+    color: #666;
+    font-style: italic;
+}
